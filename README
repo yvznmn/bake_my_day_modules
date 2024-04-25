@@ -1,0 +1,9 @@
+Create venv with env variables set activate file
+
+In order to test your function in local
+
+source <setup_venv>/bin/activate
+cd functions/<function_to_test>; python3 -c "import lambda_function; print(lambda_function.lambda_handler(1,1))"
+
+In order to zip the function
+sh template/lambda_zipper.sh <function_name>
