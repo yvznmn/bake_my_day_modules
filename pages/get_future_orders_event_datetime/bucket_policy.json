@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::bmdmodules/*",
+            "Condition": {
+                "IpAddress": {
+                    "aws:SourceIp": [
+                        "2600:1700:131:8a0:201f:65fc:743:5d30",
+                        "2600:1700:131:8a0:c9bb:cfd6:9569:3168",
+                        "2600:1700:131:8a0:197d:1e3c:56b8:97b3",
+                        "75.40.190.37"
+                    ]
+                }
+            }
+        }
+    ]
+}
