@@ -1,2 +1,5 @@
 artifacts
 bake_my_day_modules_venv
+
+deploy/.terraform
+deploy/.terraform.lock.hcl
